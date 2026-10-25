@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814820756208",
+    "project_id": "lecturaapp-78791",
+    "storage_bucket": "lecturaapp-78791.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814820756208:android:3501295749085187c51035",
+        "android_client_info": {
+          "package_name": "com.example.lecturaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSaAUgIbnO89q4ujhYgDgqEStlGx2ulHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

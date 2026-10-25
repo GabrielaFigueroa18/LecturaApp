@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ENCABEZADO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📚 LecturaApp"
+            android:textColor="#25115E"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu biblioteca personal"
+            android:textColor="#55546B"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <!-- BIENVENIDA -->
+        <TextView
+            android:id="@+id/tvBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido!"
+            android:textColor="#432099"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:background="#E8DEFF"
+            android:padding="18dp"
+            android:layout_marginTop="22dp"/>
+
+        <!-- TARJETA META ANUAL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_tarjeta"
+            android:padding="20dp"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯 Mi meta anual"
+                android:textColor="#25115E"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Establece cuántos libros quieres leer este año"
+                android:textColor="#55546B"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/etMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad de libros"
+                android:textColor="#25115E"
+                android:textColorHint="#66627A"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_marginTop="18dp"/>
+
+            <Button
+                android:id="@+id/btnGuardarMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar meta"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="#7135E8"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meta: 0 libros"
+                android:textColor="#25115E"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="22dp"/>
+
+            <TextView
+                android:id="@+id/tvTerminados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Libros terminados: 0"
+                android:textColor="#166534"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvFaltantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Libros faltantes: 0"
+                android:textColor="#9A3412"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progreso de lectura"
+                android:textColor="#25115E"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="22dp"/>
+
+            <ProgressBar
+                android:id="@+id/progresoMeta"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="#7135E8"
+                android:progressBackgroundTint="#E4DEF2"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- TARJETA LIBROS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_tarjeta"
+            android:padding="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📖 Actualmente leyendo"
+                android:textColor="#25115E"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvLeyendo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Todavía no tienes libros en lectura."
+                android:textColor="#55546B"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="22dp"/>
+
+            <Button
+                android:id="@+id/btnAgregarLibro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="＋ Agregar libro"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="#7135E8"/>
+
+            <Button
+                android:id="@+id/btnBiblioteca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mi biblioteca"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="#2563EB"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnEstadisticas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ver estadísticas"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="#15803D"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- CERRAR SESIÓN -->
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar sesión"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#DC3545"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

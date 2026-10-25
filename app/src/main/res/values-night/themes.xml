@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.LecturaApp"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#7135E8</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorSecondary">#4C1D95</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <item name="android:windowBackground">#F3F1FA</item>
+
+        <item name="android:statusBarColor">#7135E8</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <item name="android:textColorPrimary">#25115E</item>
+        <item name="android:textColorSecondary">#55546B</item>
+
+    </style>
+
+</resources>

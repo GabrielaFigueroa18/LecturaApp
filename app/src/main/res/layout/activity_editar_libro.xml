@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📖 Editar libro"
+            android:textColor="#25115E"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualiza tu progreso de lectura"
+            android:textColor="#55546B"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_tarjeta"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título del libro"
+                android:textColor="#25115E"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etEditarTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:textColor="#25115E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autor"
+                android:textColor="#25115E"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"/>
+
+            <EditText
+                android:id="@+id/etEditarAutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:textColor="#25115E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total de páginas"
+                android:textColor="#25115E"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"/>
+
+            <EditText
+                android:id="@+id/etEditarTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#25115E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Páginas leídas"
+                android:textColor="#25115E"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"/>
+
+            <EditText
+                android:id="@+id/etEditarLeidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#25115E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textColor="#25115E"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp"/>
+
+            <Spinner
+                android:id="@+id/spEditarEstado"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <TextView
+                android:id="@+id/tvEditarCalificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calificación"
+                android:textColor="#25115E"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingEditarLibro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="0"
+                android:progressTint="#F59E0B"/>
+
+            <Button
+                android:id="@+id/btnActualizarLibro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar cambios"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#7135E8"
+                android:layout_marginTop="24dp"/>
+
+            <Button
+                android:id="@+id/btnEliminarLibro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar libro"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#DC2626"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btnCancelarEdicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:textAllCaps="false"
+                android:backgroundTint="#64748B"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Mis estadísticas"
+            android:textColor="#25115E"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvAnioEstadisticas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumen de lectura"
+            android:textColor="#55546B"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_tarjeta"
+            android:padding="20dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resumen de mis libros"
+                android:textColor="#25115E"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTotalEst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total de libros: 0"
+                android:textColor="#25115E"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tvTerminadosEst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terminados este año: 0"
+                android:textColor="#15803D"
+                android:textSize="17sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvLeyendoEst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leyendo: 0"
+                android:textColor="#2563EB"
+                android:textSize="17sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvPorLeerEst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por leer: 0"
+                android:textColor="#7135E8"
+                android:textSize="17sp"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_tarjeta"
+            android:padding="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯 Progreso de mi meta"
+                android:textColor="#25115E"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvMetaEst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 de 0 libros"
+                android:textColor="#55546B"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+
+            <ProgressBar
+                android:id="@+id/progresoEst"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="#7135E8"
+                android:progressBackgroundTint="#EDE9F3"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvPorcentajeEst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0% completado"
+                android:textColor="#7135E8"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_tarjeta"
+            android:padding="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📚 Distribución de lecturas"
+                android:textColor="#25115E"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDistribucionEst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cargando..."
+                android:textColor="#55546B"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+
+            <ProgressBar
+                android:id="@+id/barTerminados"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:max="100"
+                android:progressTint="#15803D"
+                android:progressBackgroundTint="#EDE9F3"
+                android:layout_marginTop="12dp"/>
+
+            <ProgressBar
+                android:id="@+id/barLeyendo"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:max="100"
+                android:progressTint="#2563EB"
+                android:progressBackgroundTint="#EDE9F3"
+                android:layout_marginTop="12dp"/>
+
+            <ProgressBar
+                android:id="@+id/barPorLeer"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:max="100"
+                android:progressTint="#7135E8"
+                android:progressBackgroundTint="#EDE9F3"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVolverEst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al Dashboard"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7135E8"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+</ScrollView>

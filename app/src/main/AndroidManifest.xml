@@ -14,6 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LecturaApp">
         <activity
+            android:name=".EstadisticasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarLibroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BibliotecaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarLibroActivity"
+            android:exported="false" />
+        <activity
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity
